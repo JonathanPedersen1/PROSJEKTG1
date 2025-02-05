@@ -1,1 +1,1 @@
-## Gruppeprosjekt i Praktisk Prosjektarbeid (PRO1000)
+## Gruppeprosjekt i PRO1000 @ USN
