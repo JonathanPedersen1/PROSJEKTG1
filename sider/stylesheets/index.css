@@ -5,14 +5,32 @@
 }
 
 .top-container{
-    height: 120px;
+    height: 100px;
     margin: 5px;
     border-radius: 50px;
 }
+
+
+    
 
 nav{
     height: inherit;
     width: inherit;
     background-color: blue;
     border-radius: 25px;
+    display: flex;
+}
+
+.logo{
+    height: inherit;
+    width: 200px;
+    background-color: lightblue;
+    border-radius: inherit;
+}
+
+.nav-elements{
+    display: flex;  
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
 }
