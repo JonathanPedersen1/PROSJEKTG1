@@ -4,33 +4,39 @@
     box-sizing: border-box;
 }
 
-.top-container{
+body {
+    background-color: antiquewhite;
+    font-family: 'Poppins', sans-serif;
+}
+
+.top-container {
     height: 100px;
     margin: 5px;
-    border-radius: 50px;
 }
 
-
-    
-
-nav{
+nav {
     height: inherit;
     width: inherit;
-    background-color: blue;
+    background-color: green;
     border-radius: 25px;
     display: flex;
+    justify-content: space-between;
 }
 
-.logo{
+.logo-elements {
     height: inherit;
+    display: flex;
+    margin-left: 12px;
+    align-items: center;
     width: 200px;
-    background-color: lightblue;
-    border-radius: inherit;
 }
 
-.nav-elements{
-    display: flex;  
-    flex-direction: row;
+.nav-elements {
     list-style: none;
-    justify-content: space-evenly;
+    display: flex;
+    width: 500px;
+    float: right;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 24px;
 }
