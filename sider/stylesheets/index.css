@@ -46,20 +46,17 @@ nav {
 .logo-title {
     color: green;
     margin-left: 15px;
-    -ms-text-size-adjust: auto;
+    font-size: x-large;
 }
 
 .nav-elements {
-    list-style: none;
     display: flex;
-    align-items: center;
     justify-content: flex-end; 
-    float: left;
-    margin-right: 24px;
 }
 
 .nav-elements li {
     margin-right: 100px; 
+    list-style: none;
 }
 
 .nav-elements a {
