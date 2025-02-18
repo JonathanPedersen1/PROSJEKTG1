@@ -6,6 +6,7 @@
 
 body {
     background-color: antiquewhite;
+    color: black;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -17,7 +18,6 @@ body {
 nav {
     height: inherit;
     width: inherit;
-    background-color: green;
     border-radius: 25px;
     display: flex;
     justify-content: space-between;
@@ -29,6 +29,16 @@ nav {
     margin-left: 12px;
     align-items: center;
     /* width: 200px; ^*/
+}
+
+.logo {
+    clip-path: inset(0 0 30% 0); 
+}
+
+.logo-title {
+    color: green;
+    margin-left: 15px;
+    margin-bottom: 25px;
 }
 
 .nav-elements {
