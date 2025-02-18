@@ -28,7 +28,7 @@ nav {
     display: flex;
     margin-left: 12px;
     align-items: center;
-    width: 200px;
+    /* width: 200px; ^*/
 }
 
 .nav-elements {
