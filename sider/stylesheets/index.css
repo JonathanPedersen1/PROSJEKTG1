@@ -10,43 +10,60 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
 .top-container {
     height: 100px;
     margin: 5px;
 }
 
 nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
     height: inherit;
     width: inherit;
     border-radius: 25px;
-    display: flex;
-    justify-content: space-between;
 }
 
 .logo-elements {
-    height: inherit;
     display: flex;
-    margin-left: 12px;
     align-items: center;
-    /* width: 200px; ^*/
+    height: inherit;
+    margin-left: 12px;
 }
 
 .logo {
-    clip-path: inset(0 0 30% 0); 
+    clip-path: inset(0 0 20% 0); 
 }
 
 .logo-title {
     color: green;
     margin-left: 15px;
-    margin-bottom: 25px;
 }
 
 .nav-elements {
     list-style: none;
     display: flex;
-    width: 500px;
-    float: right;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end; 
+    margin: 0;
+    padding: 0;
+    float: left;
     margin-right: 24px;
+}
+
+.nav-elements li {
+    margin-right: 30px; 
+}
+
+.nav-elements a {
+    text-decoration: none;
+    color: black;
 }
