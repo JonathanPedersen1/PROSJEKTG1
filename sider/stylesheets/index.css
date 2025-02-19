@@ -40,7 +40,7 @@ nav {
 }
 
 .logo {
-    clip-path: inset(0 0 20% 0); 
+    clip-path: inset(0 0 30% 0); 
 }
 
 .logo-title {
@@ -62,4 +62,14 @@ nav {
 .nav-elements a {
     text-decoration: none;
     color: black;
+}
+
+.blog-title {
+    margin-left: 6.5%;
+    font-size: xx-large;
+}
+
+.blog-view {
+    margin-left: 6.5%;
+    margin-top: 1%;
 }
