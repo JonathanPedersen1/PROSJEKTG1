@@ -6,7 +6,15 @@
 
 body {
     background-color: antiquewhite;
+    color: black;
     font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 .top-container {
@@ -15,28 +23,53 @@ body {
 }
 
 nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
     height: inherit;
     width: inherit;
-    background-color: green;
     border-radius: 25px;
-    display: flex;
-    justify-content: space-between;
 }
 
 .logo-elements {
-    height: inherit;
     display: flex;
-    margin-left: 12px;
     align-items: center;
-    width: 200px;
+    height: inherit;
+    margin-left: 12px;
+}
+
+.logo {
+    clip-path: inset(0 0 30% 0); 
+}
+
+.logo-title {
+    color: green;
+    margin-left: 15px;
+    font-size: x-large;
 }
 
 .nav-elements {
-    list-style: none;
     display: flex;
-    width: 500px;
-    float: right;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 24px;
+    justify-content: flex-end; 
+}
+
+.nav-elements li {
+    margin-right: 100px; 
+    list-style: none;
+}
+
+.nav-elements a {
+    text-decoration: none;
+    color: black;
+}
+
+.blog-title {
+    margin-left: 6.5%;
+    font-size: xx-large;
+}
+
+.blog-view {
+    margin-left: 6.5%;
+    margin-top: 1%;
 }
