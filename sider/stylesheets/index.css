@@ -1,9 +1,9 @@
-*{
+* {
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: floralwhite;
     font-family: 'Poppins', sans-serif;
     margin-left: 180px;
@@ -13,7 +13,7 @@ body{
     flex-direction: column;
 }
 
-nav{
+nav {
     height: inherit;
     width: inherit;
     border-radius: 25px;
@@ -23,7 +23,7 @@ nav{
     margin-right: -180px
 }
 
-#nav4{
+#nav4 {
     background-color: #A9BE62;
     height: 50px;
     width: 100px;
@@ -33,7 +33,7 @@ nav{
     border-radius: 8px;
 }
 
-.logo-elements{
+.logo-elements {
     height: inherit;
     display: flex;
     justify-content: space-between;
@@ -41,16 +41,16 @@ nav{
     align-items: center;
 }
 
-.logo-img{
+.logo-img {
     clip-path: 0% 0% 20% 0%;
 }
 
-.title-text{
+.title-text {
     font-size: 20pt;
     color: #A9BE62;
 }
 
-.nav-elements{
+.nav-elements {
     list-style: none;
     display: flex;
     width: 500px;
@@ -60,7 +60,7 @@ nav{
     margin-right: 24px;
 }
 
-.about-container{
+.about-container {
     background-color:beige;
     margin-top: 26px;
     margin-left: 60px;
@@ -69,17 +69,17 @@ nav{
     border: 1px solid lightgray;
 }
 
-.about-container h3{
+.about-container h3 {
     padding-left: 24px;
 }
 
-.about-container p{
+.about-container p {
     padding-left: 24px;
     padding-right: 24px;
     margin-bottom: 16px;
 }
 
-.separator{
+.separator {
     height: 1px;
     background-color: lightgray;
     margin: 10px 0;
@@ -92,7 +92,7 @@ nav{
     font-weight: bolder;
 }
 
-.blog-content{
+.blog-content {
     margin-top: -70px;
     height: 500px;
     display: flex;
@@ -102,7 +102,7 @@ nav{
     margin-right: 30px;
 }
 
-.blog-box{
+.blog-box {
     background-color:beige;
     height: 350px;
     width: 500px;
@@ -110,27 +110,29 @@ nav{
     border: 1px solid lightgray;
 }
 
-.blog-image-preview{
+.blog-image-preview {
     height: 225px;
 }
 
-.blog-text-preview{
+.blog-text-preview {
     height: 100px; 
     margin-left: 22px;
 }
 
-/*text inni blog-box*/
-.blog-text-preview h3{
+/* tekst i blog preview */
+.blog-text-preview h3 {
     font-size: 16pt;
     color: black;
     margin-bottom: -16px;
 }
-.blog-text-preview h4{
+
+.blog-text-preview h4 {
     font-size: 12pt;
     color: green;
     margin-bottom: -10px;
 }
-.blog-text-preview p{
+
+.blog-text-preview p {
     font-size: 10pt;
     color: gray;
 }
