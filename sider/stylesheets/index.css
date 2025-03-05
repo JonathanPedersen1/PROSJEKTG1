@@ -120,3 +120,19 @@ nav {
     color: gray;
     margin-top: 14px;
 }
+
+footer {
+    background-color: #5c6cb2;
+    color: #000;
+    border-top: 5px solid #fff;
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer {
+    margin-left: 22px;
+    font-weight: bold;
+    font-size: 16px;
+}
