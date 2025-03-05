@@ -7,6 +7,10 @@
 body {
     background-color: floralwhite;
     font-family: 'Poppins', sans-serif;
+    /* Setter footer nederst på siden */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .top-container {
@@ -122,17 +126,11 @@ nav {
 }
 
 footer {
-    background-color: #5c6cb2;
-    color: #000;
+    background-color: #fff;
     border-top: 5px solid #fff;
     padding: 5px 0;
     text-align: center;
     width: 100%;
     margin-top: auto;
-}
-
-.footer {
-    margin-left: 22px;
-    font-weight: bold;
-    font-size: 16px;
+    bottom: 0;
 }
