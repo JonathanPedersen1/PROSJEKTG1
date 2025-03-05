@@ -14,22 +14,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-}
-
-.top-container {
-    height: 100px;
-    margin: 5px;
 }
 
 nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    flex-grow: 1;
-    height: inherit;
-    width: inherit;
-    border-radius: 25px;
 }
 
 .logo-elements {
@@ -45,13 +35,13 @@ nav {
 
 .logo-title {
     color: green;
-    margin-left: 15px;
+    margin-left: 12px;
     font-size: x-large;
 }
 
 .nav-elements {
     display: flex;
-    justify-content: flex-end; 
+
 }
 
 .nav-elements li {
@@ -72,4 +62,20 @@ nav {
 .blog-view {
     margin-left: 6.5%;
     margin-top: 1%;
+}
+
+footer {
+    background-color: #5c6cb2;
+    color: #000;
+    border-top: 5px solid #fff;
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer {
+    margin-left: 22px;
+    font-weight: bold;
+    font-size: 16px;
 }
