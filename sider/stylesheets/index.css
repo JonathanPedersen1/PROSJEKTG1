@@ -6,23 +6,28 @@
 body {
     background-color: floralwhite;
     font-family: 'Poppins', sans-serif;
-    margin-left: 180px;
-    margin-right: 180px;
     /* Setter footer nederst på siden */
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+}
+
+.entire-page {
+    width: 1650px;
+}
+
+/*Denne lar oss sette nav i senter av parent*/
+.nav-container {
+    display: flex;
+    justify-content: center;
 }
 
 nav {
-    height: inherit;
-    width: inherit;
     border-radius: 25px;
     display: flex;
     justify-content: space-between;
-    margin-left: -180px;
-    margin-right: -180px
+    width: 1400px;
 }
-
+/*HELLO*/
 #nav4 {
     background-color: #A9BE62;
     height: 50px;
@@ -37,7 +42,6 @@ nav {
     height: inherit;
     display: flex;
     justify-content: space-between;
-    margin-left: 12px;
     align-items: center;
 }
 
@@ -57,7 +61,10 @@ nav {
     float: right;
     align-items: center;
     justify-content: space-between;
-    margin-right: 24px;
+}
+
+.blog-title {
+    margin-left: 50px;
 }
 
 .about-container {
@@ -84,39 +91,56 @@ nav {
     background-color: lightgray;
     margin: 10px 0;
 }
-
+/*----------------------------------------------------*/
 .blog-header {
-    margin-top: 30px;
     margin-left: 50px;
     font-size: 18pt;
     font-weight: bolder;
 }
 
 .blog-content {
-    margin-top: -70px;
     height: 500px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /*flex-direction: column;*/
     margin-left: 30px;
     margin-right: 30px;
 }
 
 .blog-box {
     background-color:beige;
-    height: 350px;
+    height: 430px;
     width: 500px;
     border-radius: 24px;
     border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.blog-image-preview {
-    height: 225px;
-}
+.blog-preview-image {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    object-fit: cover;
+  }
+  
+  .blog-preview-image img {
+    object-fit: cover;
+    object-position: center;
+  }  
 
-.blog-text-preview {
+  .blog-text-preview {
     height: 100px; 
-    margin-left: 22px;
+    padding-left: 22px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 30px;
 }
 
 /* tekst i blog preview */
@@ -142,3 +166,124 @@ footer {
     text-align: center;
     width: 100%;
 }
+
+/*
+Med forbehold om feil
+standard metrics
+    
+    .blogbox            .blog-preview-image     blogpreview tekst
+    height: 350px;      height: 225px;          h3 16pt
+    width: 500px;                               h4 12pt
+                                                p  10pt
+*/
+/*
+@media screen and (min-width: 1665px) {
+
+    .blog-box {
+        margin-top: 30px;
+    }
+
+  }*/
+
+  @media screen and (max-width: 1665px) {
+    .entire-page {
+        width: 100%; /* nullstiller width="1650" */
+    }
+    .blog-box {
+        width: 430px;
+        height: 301px;
+    }
+    .blog-preview-image {
+        height: 200px;
+    }
+  }
+
+
+  @media screen and (max-width: 1450px) {
+    .blog-box {
+        width: 370px;
+        height: 268px;
+    }
+    .blog-preview-image {
+        height: 170px;
+    }
+
+    /* blogpreview tekst */
+    .blog-text-preview h3 {
+        font-size: 14pt;
+    }
+  }
+
+  @media screen and (max-width: 1220px) {
+    .blog-box {
+        width: 290px;
+        height: 238px;
+    }
+    .blog-preview-image {
+        height: 140px;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    #blog-box-3 {
+        display: none;
+    }
+    .blog-box {
+        width: 325px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    #blog-box-3 {
+        display: block;
+    }
+    .blog-box {
+        width: 325px;
+    }
+    .blog-content {
+        flex-direction: column;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #blog-box-2, #blog-box-3 {
+        margin-top: 20px;
+    }
+  }
+
+  /*
+.blog-content {
+    margin-top: -70px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+  */
+  
+  /*@media screen and (max-width: 1300px) {
+    nav {
+        width: 1000px;
+    }
+    .title-text {
+        font-size: 18pt;
+    }
+    .blog-content {
+        display: flex;
+        flex-wrap:wrap;
+
+    }
+  }
+/*
+Tablet
+Common Resolutions:
+
+768 x 1024 (standard for older and budget models)
+
+1280 x 800 (common for Android tablets)
+
+1920 x 1080 (Full HD, widely used)
+
+*/
