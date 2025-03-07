@@ -165,6 +165,8 @@ footer {
     color: #A9BE62;
     text-align: center;
     width: 100%;
+    
+    
 }
 
 /*
@@ -176,14 +178,7 @@ standard metrics
     width: 500px;                               h4 12pt
                                                 p  10pt
 */
-/*
-@media screen and (min-width: 1665px) {
 
-    .blog-box {
-        margin-top: 30px;
-    }
-
-  }*/
 
   @media screen and (max-width: 1665px) {
     .entire-page {
@@ -214,6 +209,7 @@ standard metrics
     }
   }
 
+
   @media screen and (max-width: 1220px) {
     .blog-box {
         width: 290px;
@@ -224,6 +220,7 @@ standard metrics
     }
   }
 
+
   @media screen and (max-width: 1023px) {
     #blog-box-3 {
         display: none;
@@ -232,6 +229,7 @@ standard metrics
         width: 325px;
     }
   }
+
 
   @media screen and (max-width: 767px) {
     #blog-box-3 {
@@ -249,33 +247,23 @@ standard metrics
     #blog-box-2, #blog-box-3 {
         margin-top: 20px;
     }
-  }
-
-  /*
-.blog-content {
-    margin-top: -70px;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-  */
-  
-  /*@media screen and (max-width: 1300px) {
-    nav {
-        width: 1000px;
+    /* Hamburgermenu eventyret starter her */
+    .logo-img{
+        width: 100px;
+    }
+    .nav-elements {
+        display: none;
     }
     .title-text {
-        font-size: 18pt;
+        font-size: 16pt;
     }
-    .blog-content {
-        display: flex;
-        flex-wrap:wrap;
-
+    .about-container {
+        margin-left: 18px;
+        margin-right: 18px;
     }
   }
+
+
 /*
 Tablet
 Common Resolutions:
