@@ -45,9 +45,9 @@ nav {
     align-items: center;
 }
 
-.logo-img {
-    clip-path: 0% 0% 20% 0%;
-}
+/*.logo-img {
+    clip-path: 0% 0% 20%;   mulig vi ikke bruker denne
+}*/
 
 .title-text {
     font-size: 20pt;
@@ -61,6 +61,22 @@ nav {
     float: right;
     align-items: center;
     justify-content: space-between;
+}
+
+.menu-line {
+    height: 5px;
+    width: 30px;
+    background-color: lightgray;
+    margin: 6px;
+}
+
+/*åpner via media senere*/
+.hamburger-menu, .menu-line {
+    display: none;
+}
+
+#menu-line-2 {
+    margin-top: 10px;
 }
 
 .blog-title {
@@ -180,6 +196,7 @@ standard metrics
 */
 
 
+
   @media screen and (max-width: 1665px) {
     .entire-page {
         width: 100%; /* nullstiller width="1650" */
@@ -212,8 +229,8 @@ standard metrics
 
   @media screen and (max-width: 1220px) {
     .blog-box {
-        width: 290px;
-        height: 238px;
+      width: 80%;
+      margin: 0.675rem
     }
     .blog-preview-image {
         height: 140px;
@@ -226,7 +243,8 @@ standard metrics
         display: none;
     }
     .blog-box {
-        width: 325px;
+        width: 80%;
+        margin: 0.675rem;
     }
   }
 
@@ -236,8 +254,10 @@ standard metrics
         display: block;
     }
     .blog-box {
-        width: 325px;
+        width: 80%;
+        margin: 0.675rem;
     }
+
     .blog-content {
         flex-direction: column;
         margin-top: 0px;
@@ -251,8 +271,17 @@ standard metrics
     .logo-img{
         width: 100px;
     }
-    .nav-elements {
+    #nav1, #nav2, #nav3, #nav4 {
         display: none;
+    }
+    .hamburger-menu, .menu-line {
+        display: block;
+    }
+    
+    .nav-elements {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 20px;
     }
     .title-text {
         font-size: 16pt;
