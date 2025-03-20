@@ -34,7 +34,7 @@ textarea {
 }
 textarea {
     resize: vertical;
-    height: 150px; /* Adjusted height */
+    height: 150px;
 }
 
 button.submit-button {
@@ -58,26 +58,20 @@ button.submit-button:hover {
 }
 
 .response-box {
-    display: none; /* Hidden by default */
+    display: none;
     color: #fff;
-    background-color: #A9BE62; /* Green background for success */
-    padding: 25px; /* Increased padding for a larger box */
-    border-radius: 10px; /* Slightly rounded corners */
+    background-color: #A9BE62;
+    padding: 25px;
+    border-radius: 10px;
     text-align: center;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Slightly larger shadow */
-    font-size: 18px; /* Larger font size */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    font-size: 18px;
     font-family: 'Poppins', sans-serif;
-    max-width: 600px; /* Increased width */
-    position: fixed; /* Position fixed to center on the screen */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust for the element's size */
-    z-index: 1000; /* Ensure it appears above other elements */
-    line-height: 1.6; /* Add spacing between lines */
+    max-width: 600px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    line-height: 1.6;
 }
-
-/*@media screen and (min-width: 600px) {
-    textarea {
-        width: 400px;
-    }
-  }*/
