@@ -279,14 +279,14 @@ nav {
     border-top-right-radius: 24px;
     object-fit: cover;
   }
-  
+
   .blog-preview-image img {
     object-fit: cover;
     object-position: center;
-  }  
+  }
 
   .blog-text-preview {
-    height: 100px; 
+    height: 100px;
     padding-left: 22px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
@@ -323,7 +323,15 @@ footer {
 
 
 /*               Responsive                  */
-
+@media screen and (min-width: 1665px) {
+    .blog-box {
+        width: 430px;
+        height: 301px;
+    }
+    .blog-preview-image {
+        height: 200px;
+    }
+  }
 
   @media screen and (max-width: 1665px) {
     .entire-page {
