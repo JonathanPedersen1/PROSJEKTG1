@@ -12,16 +12,23 @@ document.addEventListener("DOMContentLoaded", function () {
             .then((response) => response.json())
             .then((data) => {
                 if (data.success) {
+                    // Get the sender's name
+                    const senderName = form.querySelector("#name").value;
+
                     // Show the response box
                     const responseBox = document.getElementById("form-response");
                     responseBox.style.display = "block";
-                    responseBox.textContent =
-                        "Thank you! Your message has been received. We will get back to you shortly."; // Success message
-                    form.reset(); // Clear the form fields
+                    responseBox.innerHTML = `
+                        <strong>Thank you, ${senderName}!</strong><br><br>
+                        Your message has been received.<br>
+                        We will get back to you shortly.<br><br>
+                        Have a nice day!
+                    `; // Success message with line breaks
 
                     // Hide the response box after 10 seconds
                     setTimeout(() => {
                         responseBox.style.display = "none";
+                        form.reset(); // Clear the form fields AFTER the response box disappears
                     }, 10000); // 10 seconds
                 } else {
                     alert("There was an error submitting the form. Please try again.");

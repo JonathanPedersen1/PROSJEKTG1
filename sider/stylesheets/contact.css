@@ -50,7 +50,7 @@ button.submit-button {
 }
 
 button.submit-button:hover {
-    background-color: #ff006a;
+    background-color: #2742db;
 }
 
 .entire-page{ /*ikke best practise men flytter footer ned til bunnen*/
@@ -60,16 +60,20 @@ button.submit-button:hover {
 .response-box {
     display: none; /* Hidden by default */
     color: #fff;
-    background-color: #28a745; /* Green background for success */
-    padding: 15px;
-    border-radius: 5px;
+    background-color: #A9BE62; /* Green background for success */
+    padding: 25px; /* Increased padding for a larger box */
+    border-radius: 10px; /* Slightly rounded corners */
     text-align: center;
-    margin-top: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Slightly larger shadow */
+    font-size: 18px; /* Larger font size */
     font-family: 'Poppins', sans-serif;
-    max-width: 500px;
-    margin: 20px auto;
+    max-width: 600px; /* Increased width */
+    position: fixed; /* Position fixed to center on the screen */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the element's size */
+    z-index: 1000; /* Ensure it appears above other elements */
+    line-height: 1.6; /* Add spacing between lines */
 }
 
 /*@media screen and (min-width: 600px) {
