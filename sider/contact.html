@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,12 +21,14 @@
             <nav>
                 <div class="logo-elements">
                     <a href="Index.html">
-                        <img src="/filer/Logo.png" width="125" alt="logo" class="logo-img"> 
+                        <img src="/filer/Logo.png" width="125" alt="logo" class="logo-img">
                     </a>
-                    <a href="Index.html" class="tta"><h3 class="title-text">Green Code Project</h3></a>
+                    <a href="Index.html" class="tta">
+                        <h3 class="title-text">Green Code Project</h3>
+                    </a>
                 </div>
                 <ul class="nav-elements">
-                    <li id="nav1" ><a href="blog.html">Blogs</a></li>
+                    <li id="nav1"><a href="blog.html">Blogs</a></li>
                     <li id="nav4"><a href="tools.html">Tools</a></li>
                     <li id="nav2"><a href="about.html">About us</a></li>
                     <li id="nav3"><a href="contact.html">Contact Us</a></li>
@@ -52,37 +55,68 @@
             </div>
             <div class="overlay"></div>
         </div>
-        
-        <form id="contact-form">
-            <form action="contact.php" method="post">
-           
-                <div class="form-group">
-                    <h1>Contact us!</h1>
-                    <label for="name">Name</label>
-                     <input type="text" class="form-control" id="name" name="Name"/>
-                </div>
-           
-                <div class="form-group">
-                     <label for="email">Email</label>
-                     <input type="email" class="form-control" id="email" name="email"/> 
-                     
-                </div>
-           
-                <div class="form-group">
-                     <label for="subject">Subject</label>
-                     <input type="text" class="form-control" id="subject" name="subject"/>
-                </div>
-           
-                <div class="form-group">
-                     <label for="message">Message</label>
-                     <textarea class="form-control mail-message" id="message" name="message"> </textarea>
-                </div>
-                <button type="submit" class="submit-button">Send</button>
-           
-                </form>
-            <footer>
-                <p class="footer">© 2025 Green Code Project. All rights reserved.</p>
-            </footer>
+
+        <form id="contact-form" method="POST">
+            <!-- Sender's Name -->
+            <div class="form-group">
+                <h1>Contact us!</h1>
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required />
+            </div>
+
+            <!-- Sender's Email -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required />
+            </div>
+
+            <!-- Subject -->
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" id="subject" name="subject" required />
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control mail-message" id="message" name="message" required></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-button">Send</button>
+        </form>
+        <div id="form-response" style="display: none; color: green; margin-top: 10px;">Thank you! Your message has been
+            sent.</div>
+        <footer>
+            <p class="footer">© 2025 Green Code Project. All rights reserved.</p>
+        </footer>
     </div>
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            const form = event.target;
+            const formData = new FormData(form);
+
+            fetch("/sider/contact.php", {
+                    method: "POST",
+                    body: formData,
+                })
+                .then((response) => response.text())
+                .then((data) => {
+                    // Handle success
+                    console.log(data); // Optional: Log the server response
+                    document.getElementById("form-response").style.display =
+                        "block"; // Show success message
+                    form.reset(); // Clear the form fields
+                })
+                .catch((error) => {
+                    // Handle error
+                    console.error("Error:", error);
+                    alert("There was an error submitting the form. Please try again.");
+                });
+        });
+    </script>
 </body>
+
 </html>
