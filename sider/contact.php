@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // SenderMail API credentials
-    $apiKey = 'mlsn.60dbf5150b8c0d6a1eae7be086eefb47748f6695b64013698c2fd76524b02b43'; // Replace with your SenderMail API Key
+    $apiKey = 'replacethis'; // Replace with your SenderMail API Key
 
     // Email to the website owner
     $ownerEmail = [
