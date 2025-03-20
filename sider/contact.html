@@ -10,7 +10,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="/sider/stylesheets/index.css">
     <link rel="stylesheet" href="/sider/stylesheets/contact.css">
-    <script src="scripts/hamburger.js"></script>
+    <script src="/sider/scripts/hamburger.js"></script>
+    <script src="/sider/scripts/contact.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -56,7 +57,10 @@
             <div class="overlay"></div>
         </div>
 
-        <form id="contact-form" method="POST">
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <!-- Add your Web3Forms Access Key -->
+            <input type="hidden" name="access_key" value="41029aa6-ac8a-41ee-971f-f231c71b6cdc" />
+
             <!-- Sender's Name -->
             <div class="form-group">
                 <h1>Contact us!</h1>
@@ -85,38 +89,13 @@
             <!-- Submit Button -->
             <button type="submit" class="submit-button">Send</button>
         </form>
-        <div id="form-response" style="display: none; color: green; margin-top: 10px;">Thank you! Your message has been
-            sent.</div>
+        <div id="form-response" class="response-box" style="display: none;">
+            Thank you! Your message has been received. We will get back to you shortly.
+        </div>
         <footer>
             <p class="footer">© 2025 Green Code Project. All rights reserved.</p>
         </footer>
     </div>
-    <script>
-        document.getElementById("contact-form").addEventListener("submit", function (event) {
-            event.preventDefault(); // Prevent the default form submission
-
-            const form = event.target;
-            const formData = new FormData(form);
-
-            fetch("/sider/contact.php", {
-                    method: "POST",
-                    body: formData,
-                })
-                .then((response) => response.text())
-                .then((data) => {
-                    // Handle success
-                    console.log(data); // Optional: Log the server response
-                    document.getElementById("form-response").style.display =
-                        "block"; // Show success message
-                    form.reset(); // Clear the form fields
-                })
-                .catch((error) => {
-                    // Handle error
-                    console.error("Error:", error);
-                    alert("There was an error submitting the form. Please try again.");
-                });
-        });
-    </script>
 </body>
 
 </html>
