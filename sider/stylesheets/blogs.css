@@ -37,10 +37,11 @@
     /*border: solid 1px green;*/
     height: auto;
     width: 60%;
-    padding-left: 6px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 .spacer {
@@ -103,6 +104,9 @@
 @media screen and (max-width: 1023px) {
     .blogpage-blog {
         width: 95%;
+    }
+    .spacer {
+        height: 90px;
     }
 }
 
