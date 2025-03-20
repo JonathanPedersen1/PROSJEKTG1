@@ -15,7 +15,7 @@
     height: auto;
     width: 60%;
     display: flex;
-    position: relative; /* Added to enable absolute positioning for children */
+    position: relative;
 }
 
 .blogpage-blog-image{
@@ -31,7 +31,7 @@
     width: 100%;
     border-top-left-radius: 24px;
     border-bottom-left-radius: 24px;
-  }  
+  }
 
 .blogpage-blog-text{
     /*border: solid 1px green;*/
@@ -40,16 +40,22 @@
     padding-left: 6px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+}
+
+.spacer {
+    height: 30px;
+    width: 100%;
 }
 
 .blogpage-blog-button {
     background-color: orange;
     height: 30px;
     width: 90px;
-    display: flex;    
+    display: flex;
     justify-content: center;
     border-radius: 23px;
-    margin-bottom: 10px;
+    margin-top: 5%;
     align-items: center;
 }
 .blogpage-blog-button, a {
@@ -64,7 +70,7 @@
     position: absolute;
     bottom: 10px;
     right: 2.5%;
-    margin-right: 0; 
+    margin-right: 0;
 }
 
 /*
@@ -112,5 +118,11 @@
         width: 90%;
         text-align: start;
         margin-left: 5%;
+    }
+    .spacer {
+        height: 30px;
+    }
+    .blogpage-blog-button {
+        margin-top: 0;
     }
 }
