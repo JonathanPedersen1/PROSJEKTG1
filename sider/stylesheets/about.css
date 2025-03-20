@@ -20,3 +20,11 @@
 .about-content ul li {
     margin-bottom: 10px;
 }
+
+.about-banner {
+    width: 100%; /* Make the banner span the full width of the container */
+    max-height: 300px; /* Limit the height of the banner */
+    object-fit: cover; /* Ensure the image scales nicely */
+    margin-bottom: 20px; /* Add spacing below the banner */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
