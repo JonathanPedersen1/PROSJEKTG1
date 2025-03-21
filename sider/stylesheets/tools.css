@@ -19,7 +19,7 @@
 }
 
 .blogpage-blog-image{
-    height: 100%; /* Ensure the container fills the height of the parent box */
+    height: auto; /* Ensure the container fills the height of the parent box */
     width: 40%; /* Adjust width to match the layout */
     overflow: hidden; /* Prevent overflow of the image */
     display: flex; /* Ensure proper alignment */
