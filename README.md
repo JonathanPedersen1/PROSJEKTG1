@@ -1,1 +1,0 @@
-## Gruppeprosjekt i PRO1000 @ USN
