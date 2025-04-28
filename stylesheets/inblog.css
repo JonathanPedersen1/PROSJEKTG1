@@ -103,26 +103,35 @@ li {
 
 @media screen and (max-width: 767px) {
     .in-blog-container {
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-top: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
     }
     .blog-content-box {
-        padding: 20px;
+        padding: 15px;
+        width: 100%;
     }
     .main-header {
-        font-size: 20pt;
+        font-size: 18pt;
     }
     .sub-header {
         font-size: 14pt;
     }
     .blog-pagination {
-        width: 90%;
+        width: 100%;
         margin-bottom: 4px;
         padding: 0 10px;
     }
     .pagination-link, .pagination-placeholder {
         padding: 0 10px;
+    }
+
+    /* Improve link wrapping on mobile */
+    .blog-content-box a {
+        word-break: break-word;
+        overflow-wrap: break-word;
+        max-width: 100%;
+        font-size: 0.9rem;
     }
 }
 
@@ -164,4 +173,12 @@ footer {
     padding: 10px 0;
     background-color: floralwhite;
     margin-bottom: 20px;
+}
+
+/* Link overflow prevention */
+.blog-content-box a {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    display: inline-block;
+    max-width: 100%;
 }
