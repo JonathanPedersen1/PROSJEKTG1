@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <link rel="stylesheet" href="stylesheets/code.css">
+    <script src="scripts/hamburger.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grønn Koding</title>
+</head>
+
+<body>
+    <div class="entire-page">
+        <div class="nav-container">
+            <nav>
+                <div class="logo-elements">
+                    <a href="index.html">
+                        <img src="images/Logo.png" width="125" alt="logo" class="logo-img">
+                    </a>
+                    <a href="index.html" class="tta">
+                        <h3 class="title-text">EcoCode</h3>
+                    </a>
+                </div>
+                <ul class="nav-elements">
+                    <li id="nav0"><a href="index.html">Hjem</a></li>
+                    <li id="nav1" class="active-nav"><a href="code.html">Grønn Koding</a></li>
+                    <li id="nav4"><a href="tools.html">Verktøy</a></li>
+                    <li id="nav2"><a href="about.html">Om oss</a></li>
+                    <li id="nav3"><a href="contact.html">Kontakt oss</a></li>
+                    <li id="hamburger-menu">
+                        <a>
+                            <div class="menu-line"></div>
+                            <div class="menu-line" id="menu-line2"></div>
+                            <div class="menu-line" id="menu-line3"></div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu">
+                <div class="hamburger-menu-content">
+                    <button class="close-menu">&times;</button>
+                    <ul>
+                        <li><a href="index.html" class="hamburger-menu-alt">Hjem</a></li>
+                        <li><a href="code.html" class="hamburger-menu-alt hamburger-active">Grønn Koding</a></li>
+                        <li><a href="tools.html" class="hamburger-menu-alt">Verktøy</a></li>
+                        <li><a href="about.html" class="hamburger-menu-alt">Om oss</a></li>
+                        <li><a href="contact.html" class="hamburger-menu-alt">Kontakt oss</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </div>
+        <div class="codepage-container">
+            <div class="codepage-blog">
+                <h2 class="tips-header">Analyse & tips</h2>
+                <div class="tips-boxes-container">
+                    <div class="tips-box">
+                        <h3>Til den lærende utvikleren</h3>
+                        <p>Det første og viktigste er å lære seg HTML og CSS, og det på en god måte! Som de fleste utviklere vet skal det ikke mye til før en skriver kode som kanskje ikke er så effektiv som den har potensialet til å være.</p>
+                        <p>For å bli god til å skrive HTML og CSS (og kanskje javascript) anbefaler vi:</p>
+                        <span class="subheading">Prøv deg fram og kod ofte!</span>
+                        <p>Det finnes ingen "quick-fix" for å bli god, og ofte er løsningen bare å bygge; prøv deg frem, og husk at feilene du gjør fort er det du lærer av! Jo mer du koder, jo mer progresjon vil du ha.</p>
+                        <span class="subheading">Bruk W3Schools</span>
+                        <p>W3Schools er en nettside som inneholder en rekke informasjon om både HTML, CSS og Javascript, enten det skulle være hamburger-menu, bildebehandling, hover-effekter og mer.</p>
+                        <p>Lenke til W3Schools (js): <a href="https://www.w3schools.com/js/default.asp" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">https://www.w3schools.com/js/default.asp</a></p>
+                    </div>
+                    <div class="tips-box">
+                        <h3>Flere kodespråk?</h3>
+                        <p>Det er kjempebra om du har lært deg å skrive effektiv HTML, CSS og Javascript. Godt jobbet, men ganger er det faktisk bare halve jobben når det kommer til grønn koding.</p>
+                        <p>Visste du at den samme kodejobben ikke er like rask og energieffektiv tvers av programmeringsspråkene? Å telle seg gjennom en liste, er ikke alltid å telle seg gjennom en liste.</p>
+                        <p>Selv om Python de siste årene har fått mye oppmerksomhet, og blant annet har flere brukere, bruker Python ifølge forskning hele <strong>38</strong> ganger mer energi enn Java! Et mer effektivt programmeringsspråk er også ofte raskere, og det kan dermed være nyttig å utforske hvilke programmeringsspråk som passer best for deg.</p>
+                        <p>Velg kodespråket med omhu!</p>
+                        <p>Lenke til case-study: <a href="https://haslab.github.io/SAFER/scp21.pdf" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">https://haslab.github.io/SAFER/scp21.pdf</a></p>
+                    </div>
+                </div>
+                
+                <!-- New full-width box container -->
+                <div class="fullwidth-box-container">
+                    <div class="tips-box tips-box-fullwidth">
+                        <h3>Problem</h3>
+                        <p>Vi har berørt viktige punkter, både gjennom <a href="blogs/blog1.html" style="color: blue; text-decoration: underline;">bloggene</a> og det vi har skrevet i seksjonene ovenfor. Vi står foran økende karbonproduksjon, og det går ut over kloden våres. Nettsidene vi lager er verken like effektive hver gang, eller publisert på en akseptabel måte. Ifølge <a href="https://en.wikipedia.org/wiki/Carbon_dioxide_in_Earth%27s_atmosphere" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">Wikipedia</a> har CO2 utslippet målt i Parts Per Million økt 50% siden pre-industrielle tider. Det er først etter den industrielle revolusjonen CO2-økningen har fått høy fart. EcoCode sitt formål blir så å sørge for at vi i større grad gjør det vi kan for å få endene til å møte når det kommer til internett og miljøet.</p>
+
+                        <h3>Hva gjør vi nå?</h3>
+                        <p>Som utviklere har vi gjennom vårt prosjekt sett på ulike fremgangsmåter, metoder og verktøy for å bremse, og støtte til, prosessen med bremsingen av karbonutslippet. Gjennom å optimalisere kode gjennom kodepraksisene nedenfor og med <a href="tools.html" style="color: blue; text-decoration: underline;">verktøyene</a> vil vi kunne gjøre det vi kan, for å bidra til å bremse den betraktelig økte karbonutslippsraten. Her kommer en oppsummering på tiltak og fremgangsmåter vi mener vil bidra i riktig retning:</p>
+                        <ul>
+                            <li>Optimaliser koden din. Lær deg gode kodepraksiser, og effektive måter å skrive kode på.</li>
+                            <li>Finn ut hvordan og hvor du kan publisere nettsiden din så grønn som mulig. Et forslag fra oss er å bruke <a href="https://www.greengeeks.com/" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">GreenGeeks</a>, som både kjøper grønne energikvoter, samt planter et tre for hver registrerte bruker!</li>
+                            <li>Oppdater deg så ofte du kan, og søk etter mer informasjon! Ifølge google trends har begrepet "green coding" de siste 10-årene hatt en økende mengde søk, og med et økende fokus på karbonutslipp, vil også grønn kodepraksis bety mer.</li>
+                        </ul>
+
+                        <h3>Kilder</h3>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/Carbon_dioxide_in_Earth%27s_atmosphere" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">https://en.wikipedia.org/wiki/Carbon_dioxide_in_Earth%27s_atmosphere</a><br>
+                            <a href="https://trends.google.com/trends/explore?date=all&q=Green%20coding" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">https://trends.google.com/trends/explore?date=all&q=Green%20coding</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Space for additional content -->
+                <div class="additional-content">
+                    <h2 class="tips-header">Effektiv koding</h2>
+                    
+                    <div class="coding-tips-section">
+                        <div class="code-section">
+                            <h3>Python</h3>
+                            <p>En viktig del av grønn koding er å behandle data på en mest mulig effektiv måte. Når man arbeider med store mengder data, kan det fort føre til unødvendig bruk av ressurser og energi, spesielt om det brukes mange og tunge løkker. Ved bruk av smarte løsninger som listekomprimering kan være med på å gjøre koden mer energieffektiv.</p>
+                            <p>Vi har valgt å legge ved et eksempel hvor vi lager en liste med kvadrattall fra 0 - 9:</p>
+                            
+                            <span class="subheading">Uten listekomprimering i Python:</span>
+                            <pre><code>squares = []
+for i in range(10):
+    squares.append(i**2)</code></pre>
+                            
+                            <span class="subheading">Med listekomprimering i Python:</span>
+                            <pre><code>squares = [i**2 for i in range(10)]</code></pre>
+                        </div>
+                        
+                        <div class="code-section">
+                            <h3>SQL</h3>
+                            <p>Det blir ofte hentet ut for mye data fra databasen i forhold til hva man egentlig trenger, og dette fører til unødvendig mye ressursbruk.</p>
+                            <p>Ved å se nærmere på spørringer og data som trengs, vil dette være med på å effektivisere belastning på både server og nettverk. Dette gir en ringvirkning hvor både brukeropplevelse, tid og energi spares.</p>
+                            
+                            <span class="subheading">Før:</span>
+                            <pre><code>// Viser data fra alle kolonner i tabellen 'users'
+SELECT * FROM users;</code></pre>
+                            
+                            <span class="subheading">Etter:</span>
+                            <pre><code>// Viser kun data fra kolonnene 'firstName' og 'lastName' i tabellen 'users'.
+SELECT firstName, lastName FROM users;</code></pre>
+                        </div>
+                        
+                        <div class="code-section">
+                            <h3>Javascript</h3>
+                            <p>Dersom det bare skal gjøres enklere operasjoner i Javascript vil det være lurt å ta i bruk innebygd funksjonalitet, i stedet for å laste inn større biblioteker.</p>
+                            <p>Ved å ta i bruk den innebygde funksjonen vil nettsiden laste raskere og bruke mindre energi, som igjen er med på å redusere karbonavtrykk.</p>
+                            
+                            <span class="subheading">Før:</span>
+                            <pre><code>import _ from 'lodash';
+const doubled = _.map([1, 2, 3], n => n * 2);</code></pre>
+                            
+                            <span class="subheading">Etter:</span>
+                            <pre><code>const doubled = [1, 2, 3].map(n => n * 2);</code></pre>
+                        </div>
+                        
+                        <div class="code-section">
+                            <h3>Lazy loading</h3>
+                            <p>Lazy loading er en teknikk hvor ressurser som for eksempel bilder eller data ikke blir lastet inn før de faktisk trengs. Dette gjør at nettsiden vil laste raskere, bruke mindre båndbredde og redusere energiforbruket, noe som gir en positiv effekt på brukeropplevelsen og miljøet.</p>
+                            
+                            <pre><code>&lt;img src="image.jpg" loading="lazy" alt="A description"&gt;</code></pre>
+                        </div>
+                        
+                        <div class="code-section">
+                            <h3>Kilder</h3>
+                            <div class="source-item">Eksempel for HTML: <a href="https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Lazy_loading" target="_blank" rel="noopener noreferrer" class="sources-link">developer.mozilla.org/.../Lazy_loading</a></div>
+                            <div class="source-item">Eksempler for python: <a href="https://www.suso.academy/en/2023/03/13/green-coding-the-5-most-important-basics-for-sustainable-software-development-with-code-examples/" target="_blank" rel="noopener noreferrer" class="sources-link">suso.academy/.../green-coding...</a></div>
+                            <div class="source-item">Eksempler for SQL: <a href="https://medium.com/learning-sql/12-tips-for-optimizing-sql-queries-for-faster-performance-8c6c092d7af1" target="_blank" rel="noopener noreferrer" class="sources-link">medium.com/.../optimizing-sql-queries...</a></div>
+                            <div class="source-item">Eksempler for Javascript: <a href="https://hackernoon.com/is-lodash-that-good-performance-comparison-of-javascript-and-lodash" target="_blank" rel="noopener noreferrer" class="sources-link">hackernoon.com/.../javascript-and-lodash</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p class="footer">© 2025 Grønn Kode Prosjekt. Alle rettigheter reservert.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

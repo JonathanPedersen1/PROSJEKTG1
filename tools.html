@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <link rel="stylesheet" href="stylesheets/tools.css">
+    <script src="scripts/hamburger.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verktøy</title>
+</head>
+
+<body>
+    <div class="entire-page">
+        <div class="nav-container">
+            <nav>
+                <div class="logo-elements">
+                    <a href="index.html">
+                        <img src="images/Logo.png" width="125" alt="logo" class="logo-img">
+                    </a>
+                    <a href="index.html" class="tta">
+                        <h3 class="title-text">EcoCode</h3>
+                    </a>
+                </div>
+                <ul class="nav-elements">
+                    <li id="nav0"><a href="index.html">Hjem</a></li>
+                    <li id="nav1"><a href="code.html">Grønn Koding</a></li>
+                    <li id="nav4" class="active-nav"><a href="tools.html">Verktøy</a></li>
+                    <li id="nav2"><a href="about.html">Om oss</a></li>
+                    <li id="nav3"><a href="contact.html">Kontakt oss</a></li>
+                    <li id="hamburger-menu">
+                        <a>
+                            <div class="menu-line"></div>
+                            <div class="menu-line" id="menu-line2"></div>
+                            <div class="menu-line" id="menu-line3"></div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu">
+                <div class="hamburger-menu-content">
+                    <button class="close-menu">&times;</button>
+                    <ul>
+                        <li><a href="index.html" class="hamburger-menu-alt">Hjem</a></li>
+                        <li><a href="code.html" class="hamburger-menu-alt">Grønn Koding</a></li>
+                        <li><a href="tools.html" class="hamburger-menu-alt hamburger-active">Verktøy</a></li>
+                        <li><a href="about.html" class="hamburger-menu-alt">Om oss</a></li>
+                        <li><a href="contact.html" class="hamburger-menu-alt">Kontakt oss</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </div>
+        <div class="blogpage-container">
+            <div class="blogpage-blog">
+                <h2 class="tools-header">Verktøy for utviklere</h2>
+                
+                <div class="tools-container">
+                    <div class="tool-card">
+                        <h3>Karbon-kalkulator for nettsider</h3>
+                        <p>WebsiteEmissions er et gratis verktøy hvor CO2-utslippet til nettsiden din blir målt, hvor du i tillegg får en oversikt over hvor mange produserte plastikkflasker nettsidens utslippp tilsvarer. Ved å analysere datamengde, energibruk i datasentre og lokasjon på nettsidens vert, gir nettsiden et estimat på nettsidens karbonavtrykk.</p>
+                        <p>Testen viser også til om nettsiden din kjører på en grønn hosting plattform.</p>
+                        <a href="https://websiteemissions.com/" class="tool-button" target="_blank" rel="noopener noreferrer">Besøk nettside</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <h3>Analyseverktøy med karaktersystem</h3>
+                        <p>Denne nettsiden er et verktøy som tester nettsiden, og gir den en ytelseskarakter. Karakteren du får baseres på ulike tester den gjør, rundt vanlige elementer som ofte får skylden for dårlig ytelse, som tomme src og href tags.</p>
+                        <a href="https://tools.pingdom.com/#659db020e2400000" class="tool-button" target="_blank" rel="noopener noreferrer">Besøk nettside</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <h3>Analyse-verktøy for nettside (Lazy Loading)</h3>
+                        <p>Toolsaday er en nettside med et bredt utvalg av verktøy du kan bruke for å sjekke diverse ting på nettsiden din. Nettsiden har blant en Lazy Loading checker, hvor den finner ut for deg om nettsiden din bruker Lazy Loading.</p>
+                        <a href="https://toolsaday.com/seo/lazy-loading-images-checker" class="tool-button" target="_blank" rel="noopener noreferrer">Besøk nettside</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <h3>Grønn hosting</h3>
+                        <p>GreenGeeks er en flere anerkjente plattformer hvor du kan hoste nettsiden din grønt! For hver nye bruker som registreres hos GreenGeeks, planter GreenGeeks i samarbeid med One Tree Planted et nytt tre. Samtidig, for hver MWh som brukes, finansierer GreenGeeks for hele 3 nye og grønne MWh; har de brukt 1 MWh, betaler de for at et grønt strømselvskap produserer 3 nye MWh.</p>
+                        <a href="https://www.greengeeks.com/" class="tool-button" target="_blank" rel="noopener noreferrer">Besøk nettside</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <h3>Mål utslipp av strømforbruk</h3>
+                        <p>CodeCarbon er et open source Python-bibliotek som måler CO2-utslippet programmene gir fra seg under kjøring. Dette gjøres ved at CC sporer strømforbruket til den gitte maskinen, og beregner utslipp basert på hvor i verden maskinen er lokalisert.</p>
+                        <p>CodeCarbon gjør det enkelt for utviklere å ta klimavennlige valg, og kan være til god hjelp for å gjøre prosjekter mer miljøbevisst.</p>
+                        <a href="https://www.cloudcarbonfootprint.org/" class="tool-button" target="_blank" rel="noopener noreferrer">Besøk nettside</a>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p class="footer">© 2025 Grønn Kode Prosjekt. Alle rettigheter reservert.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

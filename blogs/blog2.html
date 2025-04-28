@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheets/index.css">
+    <link rel="stylesheet" href="../stylesheets/inblog.css">
+    <script src="../scripts/hamburger.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ren koding</title>
+
+</head>
+
+<body>
+    <div class="entire-page">
+        <div class="nav-container">
+            <nav>
+                <div class="logo-elements">
+                    <a href="../index.html">
+                        <img src="../images/Logo.png" width="125" alt="logo" class="logo-img">
+                    </a>
+                    <a href="../index.html" class="tta">
+                        <h3 class="title-text">EcoCode</h3>
+                    </a>
+                </div>
+                <ul class="nav-elements">
+                    <li id="nav0"><a href="../index.html">Hjem</a></li>
+                    <li id="nav1"><a href="../code.html">Grønn Koding</a></li>
+                    <li id="nav4"><a href="../tools.html">Verktøy</a></li>
+                    <li id="nav2"><a href="../about.html">Om oss</a></li>
+                    <li id="nav3"><a href="../contact.html">Kontakt oss</a></li>
+                    <li id="hamburger-menu">
+                        <a>
+                            <div class="menu-line"></div>
+                            <div class="menu-line" id="menu-line2"></div>
+                            <div class="menu-line" id="menu-line3"></div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu">
+                <div class="hamburger-menu-content">
+                    <button class="close-menu">&times;</button>
+                    <ul>
+                        <li><a href="../index.html" class="hamburger-menu-alt">Hjem</a></li>
+                        <li><a href="../code.html" class="hamburger-menu-alt">Grønn Koding</a></li>
+                        <li><a href="../tools.html" class="hamburger-menu-alt">Verktøy</a></li>
+                        <li><a href="../about.html" class="hamburger-menu-alt">Om oss</a></li>
+                        <li><a href="../contact.html" class="hamburger-menu-alt">Kontakt oss</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </div>
+        <div class="in-blog-container">
+            <div class="blog-pagination">
+                <a href="blog1.html" class="pagination-link">Forrige blogg</a>
+                <a href="blog3.html" class="pagination-link">Neste blogg</a>
+            </div>
+            <div class="blog-content-box">
+
+
+                <h2 class="sub-header">Grunnlaget for grønn kode</h2>
+
+                <p class="paragraphs">Ren kode vil si at koden er ryddig, enkel å lese og lett å vedlikeholde. Ved å tenke på ren kode når man programmerer unngås det unødvendig kompleksitet, som igjen bidrar til å kunne forbedre programmet eller finne eventuelle feil raskere. Et ekstra pluss med ren kode er at det gir lavere ressursbruk, da effektiv kode gjerne bruker mindre minne og prosessorkraft.</p>
+
+                <p class="paragraphs">La oss se på et enkelt eksempel i programmeringsspråket Javascript:</p>
+
+                <h2 class="sub-header">Før (Rotete og lite lesbar kode):</h2>
+
+                <pre><code>let validName = false;
+if (name.length >= 3 && name.length <= 20) {
+  validName = true;
+}</code></pre>
+
+                <h2 class="sub-header">Etter (renere og mer selvforklarende kode):</h2>
+
+                <pre><code>const isValidName = (name) => {
+    return name.length >= 3 && name.length <= 20;
+  };</code></pre>
+
+                <p class="paragraphs">I eksemplet kan vi se at funksjonen har fått et klart og tydelig navn, noe som gjør at det er lettere å forstå hva den faktisk gjør.</p>
+
+                <h2 class="sub-header">Tips for ren og grønnere kode:</h2>
+
+                <ul>
+                    <li>Del opp kode i små, tydelige funksjoner</li>
+                    <li>Gi variabler og funksjoner beskrivende navn</li>
+                    <li>Unngå duplisering</li>
+                </ul>
+
+                <h2 class="sub-header">Kort oppsummert:</h2>
+
+                <p class="paragraphs">Når koden er enkel og tydelig, blir det enklere å lage grønn kode, som igjen fører til mindre energibruk og lavere CO2-utslipp.</p>
+
+                <h2 class="sub-header">Kilder:</h2>
+
+                <p class="paragraphs">
+                    <a href="https://www.energystar.gov/products/ask-the-experts/how-go-green-your-code" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">https://www.energystar.gov/products/ask-the-experts/how-go-green-your-code</a>
+                </p>
+            </div>
+            <footer>
+                <p class="footer">© 2025 Grønn Kode Prosjekt. Alle rettigheter reservert.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

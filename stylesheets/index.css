@@ -1,0 +1,597 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: floralwhite;
+    font-family: 'Poppins', sans-serif;
+    /* Setter footer nederst på siden. plot twist, det funker ikke*/
+    display: flex;
+    justify-content: center;
+}
+
+.entire-page {
+    max-width: 1650px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+/*Denne lar oss blant annet sette nav i senter av parent*/
+.nav-container {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1400px;
+}
+
+/* Navigation styling moved to nav.css */
+
+.logo-elements {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-text {
+    font-size: 20pt;
+    color: #A9BE62;
+    text-decoration: none;
+}
+
+.tta { /*ikke bry deg om det her hehe*/
+    text-decoration: none;
+}
+
+
+.nav-elements {
+    list-style: none;
+    display: flex;
+    width: 630px; /* Increased to accommodate all nav items plus margins */
+    float: right;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*------------*/
+
+#nav0, #nav1, #nav2, #nav3, #nav4 {
+    border-radius: 8px;
+    transition: background-color 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease;
+    margin-right: 5px; /* Add margin between buttons */
+    margin-left: 5px; /* Add margin between buttons */
+}
+
+#nav0 a, #nav1 a, #nav2 a, #nav3 a, #nav4 a {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+    width: 115px;
+    height: 35px;
+    white-space: nowrap; /* Prevent text wrapping in all cases */
+}
+
+#nav0:hover, #nav1:hover, #nav2:hover, #nav3:hover, #nav4:hover, .active-nav  {
+    background-color: #A9BE62;
+    box-shadow: 0 4px 8px rgba(169, 190, 98, 0.5), 0 8px 16px rgba(169, 190, 98, 0.3), 0 12px 24px rgba(169, 190, 98, 0.1);
+}
+
+/*---------------*/
+
+.menu-line {
+    height: 5px;
+    width: 30px;
+    background-color: lightgray;
+    margin: 6px;
+}
+
+/* åpner via media senere */
+.hamburger-menu, .menu-line {
+    display: none;
+}
+
+#hamburger-menu {
+    border-radius: 3px;
+}
+
+#menu-line-2 {
+    margin-top: 10px;
+}
+
+/*--------------------------------------HAM------------------------------------*/
+/* Hamburger button */
+#hamburger-menu {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+
+.menu-line {
+    height: 4px;
+    width: 30px;
+    background-color: black;
+    margin-top: 7px;
+}
+
+/* Hidden Menu */
+.hamburger-menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: floralwhite;
+    transition: right 0.3s ease-in-out;
+    z-index: 1001;
+}
+
+.hamburger-menu.active {
+    right: 0;
+}
+
+/* Menu Content */
+.hamburger-menu-content {
+    width: 100%;€
+    text-align: center;
+    padding-top: 20px;
+}
+
+.hamburger-menu-alt {
+    width: 95px;
+}
+
+.hamburger-menu-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hamburger-menu-content ul li {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.hamburger-menu-content ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    width: 95px;
+}
+
+.hamburger-menu-content ul li a:hover {
+    color: #A9BE62;
+}
+
+.hamburger-active {
+    color: #A9BE62 !important;
+    font-weight: 700;
+    position: relative;
+}
+
+.hamburger-active::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 2px;
+    background-color: #A9BE62;
+}
+
+/* Close Button */
+.close-menu {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close-menu:hover {
+    color: #A9BE62;
+}
+
+/* Overlay for Background */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay.active {
+    display: block;
+}
+/*-------------------------------------BURGER----------------------------------*/
+
+.blog-title {
+    margin-left: 50px;
+
+}
+
+.about-container {
+    background-color:beige;
+    margin-top: 26px;
+    margin-left: 60px;
+    margin-right: 60px;
+    border-radius: 24px;
+    border: 1px solid lightgray;
+}
+
+.about-container h3 {
+    padding-left: 24px;
+}
+
+.about-container p {
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 16px;
+}
+
+.separator {
+    height: 1px;
+    background-color: lightgray;
+    margin: 10px 0;
+}
+
+.blog-header {
+    margin-left: 50px;
+    font-size: 18pt;
+    font-weight: bolder;
+}
+
+.blog-content {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.blog-box {
+    background-color:beige;
+    height: 430px;
+    width: 500px;
+    border-radius: 24px;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-box:hover {
+    transform: translateY(-10px); /* Moves the element slightly upward */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhances the shadow */
+}
+
+.blog-preview-image {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    object-fit: cover;
+  }
+
+  .blog-preview-image img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .blog-text-preview {
+    height: 100px;
+    padding-left: 22px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+/* tekst i blog preview */
+.blog-text-preview h3 {
+    font-size: 16pt;
+    color: black;
+    margin-bottom: -16px;
+}
+
+.blog-text-preview h4 {
+    font-size: 12pt;
+    color: green;
+    margin-bottom: -10px;
+}
+
+.blog-text-preview p {
+    font-size: 10pt;
+    color: gray;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    color: #A9BE62;
+    padding: 10px 0;
+    background-color: floralwhite;
+}
+
+.no-link-style {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Button styles moved from inline CSS */
+.button-container {
+    padding-left: 24px;
+    padding-bottom: 24px;
+    margin-top: 10px;
+}
+
+.about-button {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #A9BE62;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    border: 1px solid #A9BE62;
+    transition: background-color 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease;
+    box-shadow: 0 4px 8px rgba(169, 190, 98, 0.5), 0 8px 16px rgba(169, 190, 98, 0.3), 0 12px 24px rgba(169, 190, 98, 0.1);
+}
+
+.about-button:hover {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/*               Responsive                  */
+@media screen and (min-width: 1665px) {
+    .blog-box {
+        width: 430px;
+        height: 301px;
+    }
+    .blog-preview-image {
+        height: 200px;
+    }
+  }
+
+  @media screen and (max-width: 1665px) {
+    .entire-page {
+        width: 100%; /* nullstiller width="1650" */
+    }
+    .blog-box {
+        width: 430px;
+        height: 301px;
+    }
+    .blog-preview-image {
+        height: 200px;
+    }
+  }
+
+
+  @media screen and (max-width: 1450px) {
+    .blog-box {
+        width: 370px;
+        height: 268px;
+    }
+    .blog-preview-image {
+        height: 170px;
+    }
+
+    /* blogpreview tekst */
+    .blog-text-preview h3 {
+        font-size: 14pt;
+    }
+    
+    /* Adjust navigation for this breakpoint */
+    nav {
+        width: 95%; /* Make nav more responsive */
+    }
+    .nav-elements {
+        width: 600px; /* Slightly reduce width */
+    }
+    #nav0 a {
+        width: 105px;
+    }
+    #nav1 a {
+        width: 125px; /* Extra width for Grønn Koding */
+    }
+    #nav2 a, #nav3 a, #nav4 a {
+        width: 110px;
+    }
+  }
+
+
+  @media screen and (max-width: 1220px) {
+    .blog-box {
+      width: 80%;
+      margin: 0.675rem
+    }
+    .blog-preview-image {
+        height: 140px;
+    }
+    
+    /* Further adjust navigation */
+    nav {
+        width: 90%;
+    }
+    .nav-elements {
+        width: 550px;
+    }
+    #nav0 a {
+        width: 95px;
+        font-size: 0.9rem;
+    }
+    #nav1 a {
+        width: 120px; /* Extra width for Grønn Koding */
+        font-size: 0.9rem;
+    }
+    #nav2 a, #nav3 a, #nav4 a {
+        width: 100px;
+        font-size: 0.9rem;
+    }
+  }
+
+
+  @media screen and (max-width: 1023px) {
+    /* Make blog-content wrap to allow the third blog to show below */
+    .blog-content {
+      flex-wrap: wrap;
+      justify-content: center; /* Center the blogs in each row */
+    }
+    
+    .blog-box {
+      width: 45%; /* Make blog boxes take up about 45% width so only 2 fit per row */
+      margin: 1rem;
+      max-width: 370px; /* Ensure they don't get too wide */
+    }
+    
+    /* Center the third blog on its own row */
+    #blog-box-3 {
+      margin-top: 20px; /* Add space between rows */
+    }
+    
+    /* Keep the rest of the existing styles */
+    .logo-img {
+        width: 105px;
+    }
+    .title-text {
+        font-size: 16pt;
+    }
+    nav {
+        width: 85%; /* Reduce nav width for better fit */
+    }
+    .nav-elements {
+        width: 550px; /* Increase from 500px to contain all items */
+    }
+    .nav-elements li {
+        font-size: 11pt;
+    }
+    #nav0 a {
+        width: 90px;
+        font-size: 0.85rem;
+    }
+    #nav1 a {
+        width: 115px; /* Extra width for Grønn Koding */
+        font-size: 0.85rem;
+    }
+    #nav2 a, #nav3 a, #nav4 a {
+        width: 95px;
+        font-size: 0.85rem;
+    }
+  }
+
+  /* Breakpoint for tablet-sized devices */
+  @media screen and (max-width: 900px) and (min-width: 768.01px) {
+    nav {
+        width: 98%;
+        padding: 0 5px;
+    }
+    .title-text {
+        font-size: 14pt;
+    }
+    .logo-img {
+        width: 90px;
+    }
+    .nav-elements {
+        width: 500px; /* Increased from 480px */
+    }
+    #nav0 a {
+        width: 80px;
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
+    #nav1 a {
+        width: 110px; /* Extra width for Grønn Koding */
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
+    #nav2 a, #nav3 a, #nav4 a {
+        width: 90px;
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
+  }
+
+
+  @media screen and (max-width: 767px) {
+    .blog-box {
+        width: 80%;
+        margin: 0.675rem;
+    }
+
+    .blog-content {
+        flex-direction: column;
+        height: auto;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        /* Keep flex-wrap from previous breakpoint */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #blog-box-2, #blog-box-3 {
+        margin-top: 20px;
+    }
+    /* Hamburgermenu eventyret starter her */
+    .logo-img{
+        width: 95px;
+    }
+    #nav0, #nav1, #nav2, #nav3, #nav4 {
+        display: none;
+    }
+    .hamburger-menu, .menu-line, #hamburger-menu {
+        display: block;
+    }
+    nav {
+        width: 100%;
+    }
+    .nav-elements {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 20px;
+        width: auto;
+    }
+    .title-text {
+        font-size: 15pt;
+    }
+    .about-container {
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+  }

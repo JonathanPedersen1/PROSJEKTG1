@@ -1,0 +1,138 @@
+/* Tools header styling */
+.tools-header {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+    width: 100%;
+}
+
+.blogpage-container{
+    /*border: solid 1px orange;*/
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 40px;
+    min-height: calc(100vh - 150px);
+    padding-bottom: 40px; /* Add space at the bottom */
+}
+
+.blogpage-blog{
+    border: 1px solid lightgray;
+    background-color:beige;
+    border-radius: 24px;
+    margin: 25px;
+    margin-bottom: 50px; /* Increased space at the bottom */
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+    overflow: visible;
+    padding: 30px;
+}
+
+/* Link styling */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Tool card styling */
+.tools-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+/* Tool button styling based on about-button */
+.tool-button {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #A9BE62;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    border: 1px solid #A9BE62;
+    transition: background-color 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease;
+    box-shadow: 0 4px 8px rgba(169, 190, 98, 0.5), 0 8px 16px rgba(169, 190, 98, 0.3), 0 12px 24px rgba(169, 190, 98, 0.1);
+    margin-top: 10px;
+}
+
+.tool-button:hover {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.tool-card {
+    background-color: floralwhite;
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tool-card h3 {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    display: inline-block;
+}
+
+.tool-card p {
+    margin: 0 0 15px 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+
+@media screen and (max-width: 1665px) {
+    .blogpage-blog {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .blogpage-blog {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .blogpage-blog {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .blogpage-blog {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .tool-card {
+        padding: 15px;
+    }
+    
+    .tool-card h3 {
+        font-size: 20px;
+    }
+}
+
+/* Footer styling */
+footer {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    color: #A9BE62;
+    padding: 10px 0;
+    background-color: floralwhite;
+    margin-bottom: 20px;
+}

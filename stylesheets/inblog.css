@@ -1,0 +1,167 @@
+/* Pagination styling */
+.blog-pagination {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    /* Using flex ordering to keep the pagination aligned with content box */
+    align-self: stretch;
+}
+
+.pagination-link {
+    color: #666;
+    text-decoration: underline;
+    padding: 0 15px; /* Add padding to pull links inward */
+}
+
+.pagination-placeholder {
+    visibility: hidden;
+    padding: 0 20px; /* Match link padding */
+}
+
+.in-blog-container {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 40px;
+    min-height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.blog-content-box {
+    border: 1px solid lightgray;
+    background-color: beige;
+    border-radius: 24px;
+    padding: 30px 40px;
+    margin-bottom: 40px;
+    margin-top: 10px; /* Add space between pagination and content box */
+    width: 80%;
+    max-width: 1200px;
+}
+
+.main-header {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #333;
+}
+
+.sub-header {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #333;
+}
+
+.paragraphs {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+ul {
+    margin-left: 20px;
+    line-height: 1.6;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1665px) {
+    .blog-content-box {
+        width: 85%;
+    }
+    .blog-pagination {
+        width: 85%;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .blog-content-box {
+        width: 90%;
+    }
+    .blog-pagination {
+        width: 90%;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .blog-content-box {
+        width: 95%;
+    }
+    .blog-pagination {
+        width: 95%;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .in-blog-container {
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 40px;
+    }
+    .blog-content-box {
+        padding: 20px;
+    }
+    .main-header {
+        font-size: 20pt;
+    }
+    .sub-header {
+        font-size: 14pt;
+    }
+    .blog-pagination {
+        width: 90%;
+        margin-bottom: 4px;
+        padding: 0 10px;
+    }
+    .pagination-link, .pagination-placeholder {
+        padding: 0 10px;
+    }
+}
+
+/* Code block styling from code.css */
+pre {
+    background-color: floralwhite;
+    border-radius: 8px;
+    padding: 12px;
+    overflow-x: auto;
+    margin: 10px 0;
+    width: 675px; 
+}
+
+code {
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+}
+
+@media screen and (max-width: 1220px) {
+    pre {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 925px) {
+    pre {
+        width: auto;
+    }
+}
+
+/* Footer styling */
+footer {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    color: #A9BE62;
+    padding: 10px 0;
+    background-color: floralwhite;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,220 @@
+.codepage-container{
+    /*border: solid 1px orange;*/
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 40px;
+    min-height: calc(100vh - 150px);
+    padding-bottom: 40px; /* Add space at the bottom */
+}
+
+.codepage-blog{
+    border: 1px solid lightgray;
+    background-color:beige;
+    border-radius: 24px;
+    margin: 25px;
+    margin-bottom: 50px; /* Increased space at the bottom */
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+    overflow: visible;
+    padding: 30px;
+}
+
+/* Link styling */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Tips and tricks section styles */
+.tips-header {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+    width: 100%;
+}
+
+.tips-boxes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.tips-box {
+    flex: 1;
+    min-width: 280px;
+    border: 1px solid lightgray;
+    border-radius: 24px;
+    padding: 20px;
+    background-color: floralwhite;
+    margin-bottom: 20px;
+    
+    /* Prevent content overflow */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.tips-box h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.tips-box p {
+    margin: 0 0 10px 0;
+    line-height: 1.6;
+}
+
+.tips-box .subheading {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    display: block;
+    font-size: 16px;
+}
+
+/* Full-width box container and styling */
+.fullwidth-box-container {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.tips-box-fullwidth {
+    width: 100%;
+    min-height: 100px; /* Add some minimum height to the empty box */
+}
+
+/* Additional content section */
+.additional-content {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    min-height: 20px; /* Ensure it takes space even when empty */
+}
+
+/* Coding tips section */
+.coding-tips-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-top: 0;
+}
+
+/* Code section styles */
+.code-section {
+    margin-bottom: 20px;
+}
+
+.code-section:first-child h3 {
+    margin-top: 0;
+}
+
+/* Code blocks */
+pre {
+    background-color: floralwhite;
+    border-radius: 8px;
+    padding: 12px;
+    overflow-x: auto;
+    margin: 10px 0;
+    width: 675px; 
+}
+
+code {
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* Source section */
+.sources-link {
+    color: blue;
+    text-decoration: underline;
+}
+
+.source-item {
+    display: block;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+
+@media screen and (max-width: 1665px) {
+    .codepage-blog {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .codepage-blog {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .codepage-blog {
+        width: 95%;
+    }
+    
+    pre {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 925px) {
+    pre {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .codepage-blog {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .tips-boxes-container {
+        flex-direction: column;
+    }
+    
+    .tips-box, .tips-box-fullwidth {
+        width: 100%;
+    }
+}
+
+/* Adjust list styling for the full-width box */
+.tips-box-fullwidth ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.tips-box-fullwidth li {
+    margin-left: 0;
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+    list-style-position: inside;
+}
+
+/* Footer styling */
+footer {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    color: #A9BE62;
+    padding: 10px 0;
+    background-color: floralwhite;
+    margin-bottom: 20px;
+}
